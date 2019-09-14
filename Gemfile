@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gemspec
 
 platforms :ruby do
-  gem 'sqlite3', '1.3.10'
+  gem 'sqlite3'
 end
 
 platforms :jruby do
