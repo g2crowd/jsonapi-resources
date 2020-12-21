@@ -4,7 +4,6 @@ require 'jsonapi/resource'
 require 'jsonapi/cached_resource_fragment'
 require 'jsonapi/response_document'
 require 'jsonapi/acts_as_resource_controller'
-require 'jsonapi/resource_controller'
 require 'jsonapi/resource_controller_metal'
 require 'jsonapi/resources/version'
 require 'jsonapi/configuration'
@@ -25,3 +24,7 @@ require 'jsonapi/operation_result'
 require 'jsonapi/operation_results'
 require 'jsonapi/callbacks'
 require 'jsonapi/link_builder'
+
+ActiveSupport.on_load(:action_controller) do
+  require 'jsonapi/resource_controller'
+end

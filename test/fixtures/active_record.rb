@@ -708,11 +708,11 @@ end
 class AuthorsController < JSONAPI::ResourceControllerMetal
 end
 
-class PeopleController < JSONAPI::ResourceController
-end
-
 class BaseController < ActionController::Base
   include JSONAPI::ActsAsResourceController
+end
+
+class PeopleController < JSONAPI::ResourceController
 end
 
 class PostsController < BaseController
